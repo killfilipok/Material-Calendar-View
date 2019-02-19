@@ -204,6 +204,13 @@ public class CalendarView extends LinearLayout {
         mCalendarProperties.setHeaderColor(color);
         AppearanceUtils.setHeaderColor(getRootView(), mCalendarProperties.getHeaderColor());
     }
+    public void setSelectionColor(int color) {
+        mCalendarProperties.setSelectionColor(color);
+    }
+
+    public void setTodayColor(int color){
+        mCalendarProperties.setTodayLabelColor(color);
+    }
 
     public void setHeaderVisibility(int visibility) {
         mCalendarProperties.setHeaderVisibility(visibility);

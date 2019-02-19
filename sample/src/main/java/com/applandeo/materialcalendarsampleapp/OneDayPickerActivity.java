@@ -1,6 +1,7 @@
 package com.applandeo.materialcalendarsampleapp;
 
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.Toast;
@@ -27,6 +28,9 @@ public class OneDayPickerActivity extends AppCompatActivity {
 
         Calendar max = Calendar.getInstance();
         max.add(Calendar.DAY_OF_MONTH, 2);
+
+        calendarView.setSelectionColor(ContextCompat.getColor(this, R.color.sampleLight));
+        calendarView.setTodayColor(ContextCompat.getColor(this, R.color.sampleLight));
 
         calendarView.setMinimumDate(min);
         calendarView.setMaximumDate(max);
